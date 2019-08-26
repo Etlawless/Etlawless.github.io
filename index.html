@@ -1,0 +1,252 @@
+
+
+<button class="buttontop2" onclick="location.href='page2.html';">Projects</button>
+<button class="buttontop3" onclick="location.href='page3.html';">CV</button>
+
+<center class="maintext">Welcome.</center>
+
+<p class= "info" id="info"></p>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+body {
+    font-family: "Lato", sans-serif;color: white;
+    
+    left:0;
+}
+#linkedin img{
+   position: fixed;
+    bottom: 0;
+    right: 110;
+     height: 80px;
+    max-height: 80px;
+    width: auto;
+}
+#github img{
+   position: fixed;
+    bottom: 0;
+    right: 10;
+     height: 80px;
+    max-height: 80px;
+    width: auto;
+}
+#demo{
+    font-size:15px;
+ position: relative;
+  left:200;
+  top:60;
+   width: 950;
+}
+#about{
+  font-size:15px;
+ position: relative;
+  left:200;
+  top:60;
+   width: 950;
+
+}
+#services{
+  font-size:15px;
+ position: relative;
+  left:200;
+ top:60;
+ width: 950;
+}
+#clients{
+   font-size:15px;
+ position: relative;
+  left:200;
+  top:60;
+  width: 150;
+}
+#clients{
+   font-size:15px;
+ position: relative;
+  left:200;
+  top:60;
+
+}
+#contact{
+  font-size:15px;
+ position: relative;
+  left:200;
+ top:60;
+  width: 950;
+}
+.maintext{
+  font-size: 50px;
+  position:absolute;
+  top:90%;
+
+}
+.info{
+  font-size:50px;
+  position:absolute;
+  bottom: 0;
+  right:0;
+  transition: 0.5s;
+}
+.buttontop {
+ background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 2px solid #e7e7e7;
+    cursor:pointer;
+    overflow: hidden; 
+    font-size: 40px;
+    color: white;
+    position:absolute; 
+    top:20; 
+    right:20;
+
+}
+.buttontop2{
+ background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none; 
+    cursor:pointer;
+    overflow: hidden; 
+    font-size: 40px;
+    color: white;
+    position:absolute; 
+    top:20; 
+    right:200;
+    border-right: 1px solid;
+
+}
+.buttontop3{
+ background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none; 
+    cursor:pointer;
+    overflow: hidden; 
+    font-size: 40px;
+    color: white;
+    position:absolute; 
+    top:20; 
+    right:370;
+    border-right: 1px solid;
+
+}
+#ellogo img{
+   position: fixed; /* or absolute */
+  top: 70%;
+  left: 60%;
+}
+
+.sidenav {
+    height: 150%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top:20; 
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+</style>
+</head>
+<body background="bg.jpg">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#" data-toggle="collapse" data-target="#about">About</a>
+  <a href="#" data-toggle="collapse" data-target="#services">Services</a>
+  <a href="#" data-toggle="collapse" data-target="#clients">Clients</a>
+  <a href="#" data-toggle ="collapse" data-target="#contact">Contact</a>
+</div>
+
+<div style="background-color:grey, ">
+<span style="font-size:50px;cursor:pointer;position:absolute; top:10; left:10;" onclick="openNav()">&#9776; open</span>
+</div>
+
+<div class="container">
+  <button type="button" class="buttontop" data-toggle="collapse" data-target="#demo">Contact</button>
+  <div id="demo" class="collapse">
+     Etlawless@hotmail.com /phone: 0861585496
+  
+  </div>
+  <div id="about" class="collapse">
+    <h2>About</h2>
+     Firstly let me introduce myself, my name is Ethan Lawless I have just completed my BA in computer science and business in Maynooth. Currently doing my Higher Diploma in Science (Computer Science). This course put into perspective the importance and relevance of computer science. I can contribute to society as our country begins to transfer manual systems to computerized. I beleive the qualification I would achieve would help me to achieve and thrive in the computer science industry therefore giving me great job opportunities to apply for the career I should wish to persue in the future. Over the course of the undergrad I completed several team projects and worked closely with the members of these groups, planning and processing as we had set our milestones as we assembeld each project. I learned and was taught through several mediums. As a person I have grown and matured thorughout my years in maynooth, I certainly developed a higher level of people skills and communication skills to portray my knowledge fluently and confidently.
+  </br>
+  </div>
+ <div id="services" class="collapse">
+    <h2>Services</h2>
+    I have graduated with a bachalors degree in Computer Science(Major) and Business(Minor). I am currently in the process of completing my higher diploma in Computer Science and have great hopes for the future  <br> I have a broad range of skills and have not yet quite yet found what interests me the most but enjoy all aspects of computer science its ever changing enviroment.
+  </br>
+  </div>
+  <div id="clients" class="collapse">
+    <h2>Clients</h2>
+    To be continued
+  </br>
+  </div>
+  <div id="contact" class="collapse">
+    <h2>Get in touch!</h2>
+    Etlawless@hotmail.com /phone: 0861585496
+  </br>
+  </div>
+</div>
+<div id="ellogo" style="opacity:0.35;">
+  <img src="logo2.png">
+</div>
+
+<div id="github">
+  <a href="https://github.com/Etlawless"><img src="gitHubLogo.png"></a>
+</div>
+<div id="linkedin">
+  <a href="https://www.linkedin.com/in/ethan-lawless-a8467b185/"><img src="linkedin.png"></a>
+</div>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+     
+</body>
+</html> 

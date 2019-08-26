@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: Arial;
+    padding: 20px;
+    background="bg.jpg"
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: transparent;
+    color: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: rgba(0, 0, 0, 0.50);
+    width: 100%;
+    padding: 20px;
+   
+}
+#aboutimg{
+  background= "hobbies.png";
+  size: relative;
+}
+#cv{
+ background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 5px;
+    border-color: black; 
+    cursor:pointer;
+    overflow: hidden; 
+    font-size: 40px;
+    color: black;
+    position:absolute; 
+    top:20; 
+    right:370;
+    }
+.vmbanner {
+    background: url(vroomatesbanner.png) no-repeat center center;
+    height: 600px;
+    width: 600px;
+ 
+}
+/* Add a card effect for articles */
+.card {
+      background: rgba(255, 255, 255, 0.70);
+     padding: 20px;
+     margin-top: 20px;
+     border-radius: 25px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.70);
+    border-radius: 25px;
+    margin-top: 20px;
+}
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn2 {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+.fbimg {
+   padding:1px;
+   border:1px solid #021a40;
+}
+/* Green */
+.app {
+  border-color: black;
+  color: green;
+}
+.app:hover {
+  background-color: black;
+  color: white;
+}
+.button-container form,
+.button-container form div {
+    display: inline;
+}
+
+.button-container button {
+    display: inline;
+    vertical-align: middle;
+}
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{height: 900px;}
+header {
+  background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 85% 85% / 30%;
+}
+header .overlay{
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  color: #FFF;
+  text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+  
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+
+h3, p {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 30px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #333;
+  background: #fff;
+  margin-bottom: 50px;
+  box-shadow: 0 3px 20px 0 #0000003b;
+}
+button:hover{
+  cursor: pointer;
+}
+.github{
+    position:fixed;
+    height: 80px;
+    max-height: 80px;
+    width: auto;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="overlay">
+<h1>Project portfolio</h1>
+<h3>A somewhat gathered collection of what I've put together up till now</h3>
+<p>check out some of the things I have gotten up to in the past while and you might find something that interests you as well. Most of these projects can be found on my Github. Hurry you've a lot to get through!</p>
+  <br>
+  <button onclick="location.href='https://github.com/Etlawless'" type="button">GitHub</button>
+    </div>
+</header>
+<script type="text/javascript">
+/* font-family: 'Kaushan Script', cursive; */
+/* font-family: 'Pinyon Script', cursive; */
+/* font-family: 'Petit Formal Script', cursive; */
+/* font-family: 'Aguafina Script', cursive; */
+/* font-family: 'Rouge Script', cursive; */
+// font-family: 'Roboto', sans-serif;
+</script>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Mobile application  Maynooth Venues</h2>
+      <h5>Maynooth Venues</h5>
+      <img src="app.png"></img>
+      <p>We created this app so that our fellow students who start each year could easily navigate the college </p>
+      <p>Upon creating the app we decided what features we would want and what would be the most useuful. The app marks a lot of popular shops / resturants / bars / etc. We also put in the college CS labs. All opening/ closing times while implementing a google api to mark the location of selected Venue. We also implemented a customisable timetable which students can use to keep track of lectures/labs. <br>Several features included:</br>
+      <br>Splash Screen   &#8711</br>
+      <br>Dyanamic background   &#8711</br>
+      <br>Dropdown menus    &#8711</br>
+      <br>customisable timetable    &#8711</br>
+      <br>Google maps API   &#8711</br>
+      <br>If I had to  critise the app I would say that it could have used firebase or other database to make it more scalable rather than shared preferences</br>
+      <div class="button-container">
+      <form  method="get" action="CS385 Project Documentation.docx">
+        <div>
+   <button class="btn app" type="submit">Download Documentation!</button>
+ </div>
+
+</form>
+<form   method="get" action="MaynoothVenues.apk">
+  <div>
+   <button class="btn app" type="submit">Download Apk!</button>
+ </div>
+</form></div>
+</p>
+    </div>
+    <div class="card">
+      <h2>3rd Year website</h2>
+      <h5>VroomMates</h5>
+      <div class="vmbanner" style="height:200px;"></div>
+      <p>Here we created a website to help tackle the challenge of students.</p>
+      <p>The website set out the task of allowing students to login, set their travel route and by doing so it allowed other members to join. If you seen a person could pick you up along a route you are allowed communicate via phone. We set up routine membership data such as gender, location etc. Each person offering the lift would come to an agreement with the passenger and benefit both parties. All data was store on firebase for login credintials and matchmaking.<br><a href="https://github.com/VroomMates/VroomMates
+"> Check out the Github </a></br><a>  </p>
+    </div>
+
+    <div class="card">
+      <h2>Actionscript browser game</h2>
+      <h5> Searchlight , Adobe flash</h5>
+      <div class="fakeimg" style="height:300px;">
+        <img src="flash.jpg" width="200" height="200"></img>
+
+</form>
+      </div>
+      <p>This team project we based it on a search and find game</p>
+      <p>The games main quest was to locate a four digit code from 4 rooms. These four rooms contained one digit for the code. Once all digits were located a number pad was revealed and the player could exit the game.
+      Each team memeber had to make their own level and hide the relevant number.
+      <br>I was in charge of pulling it all together also so I set the whole combination screen and introduction screen.</br></p>
+               <form  method="get" action="project.swf">
+        <div>
+   <button class="btn app" type="submit">Download Shockwave flash file!</button>
+ </div>
+    </div>
+
+ <div class="card">
+      <h2>Unity 2D game development</h2>
+      <img class="fbimg" src="unityfb.jpg"></img>
+      <h5> C++</h5>
+      <p>This project was just a result of my interest in 2d development. A lot of interesting techniques were used in this game such as the functionality behind making an infinite landscape and randomising the pipe height</p>
+      <p>I have created a Flappy bird Clone, a mobile game that grew in populatrity years ago and was a good starting ground for getting the hang of asset creation and 2d collision etc.
+      <br>I developed this for android and havem't yet foucused on ios. The code and assets, .wav files etc can all be viewed on github!</br></p>
+    
+     <div id="github">
+  <a href="https://github.com/Etlawless">Check out the github</a>
+</div>
+    </div>
+
+      <div class="card">
+      <h2>Actionscript Snowing effect</h2>
+      <h5>Cs270 individual project</h5>
+      <div class="fakeimg" style="height:300px"><img src="flash.jpg" width="200" height="200"></img> </div>
+       
+      <p>We took a module that had us create an individual piece of work following a tutorial and to give it our own twist</p>
+      <p>This was a seperate module to the previous AS3 group project above but all about this is available in my blog. <br><a href="https://snowfallcs270.blogspot.ie/2017/03/snowfall-effect-inactionscript-3.html"> Visit my blog </a></br></p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="aboutimg" style="height:100px;"><img src="hobbies.png" width="50%" height="150%"></img></div>
+
+      <p>
+        <br></br>
+        <br>Sports: hurling and running.</br>
+      <br>Music:: Playing guitar for 5yrs now.</br>
+    <br>Enjoy gym and music</br></p>
+    </div>
+    <div class="card">
+      <h3>Posts</h3>
+      <div class="fakeimg">"Brillant"</div><br>
+      <div class="fakeimg">"Creative"</div><br>
+      <div class="fakeimg">"Risk taker"</div>
+    </div>
+    <div class="card">
+      <h3>Enjoy</h3>
+      <p>Thanks for checking out my page</p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Ionic Mobile application</h2>
+      <h5>MaynoothPool</h5>
+      <img src="ionicapp.jpg"></img>
+      <p>The applcation was created to allow students to travel with each other both saving money and supporting a greener campus</p>
+      <p>This mobile application was completed as my part of my final year thesis and done in Ionic 4 with AngularJS and TypeScript. It aimed to achieve a greener campus and also acted as a secondary taxi carpooling app in the interest of saftey and utilizing all aspects of the application. This is all too tackle the ever growing traffic pollution we see everyday on our way to work etc. The problem of one person cars traveling long distances. <br>Several features included:</br>
+      <br>Application Login/Authentication   &#8711</br>
+      <br>Connecting and utilizing Firebase and user profiles   &#8711</br>
+      <br>Allow users to interact with maps , routes and geolocations    &#8711</br>
+      <br>Calculating distance between google locations   &#8711</br>
+      <br>Google maps API   &#8711</br>
+      <br>If I had to  critise the app I would say that it could have been much bigger but it also leaves a lot of growth for the application.</br>
+      <div class="button-container">
+     <div id="github">
+  <a href="https://github.com/Etlawless">Check out the github</a>
+</div>
+</button>
+  </div>
+ </div>
+</form>
+</p>
+
+<div class="footer">
+  <h2>To be continued</h2>
+</div>
+
+
+
+</style>
+</head>
+<body background="bg2.jpg">
+
+
+     
+</body>
+</html> 
